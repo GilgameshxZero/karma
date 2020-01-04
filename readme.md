@@ -10,25 +10,28 @@ Setup the Python environment with:
 pip install requirements.txt
 ```
 
-or, if using Conda, with:
+or, if using `conda`, with:
 
 ```bash
 conda env create --file=environment.yaml
 conda activate ig-liker
 ```
 
-Run the script with:
+Scripts can then be run from the command line as follows:
 
 ```bash
-python main.py
+python scrape.py
 ```
 
 ## Command-line options
 
 Option|Usage
 -|-
+`--username`|Messenger login. If not set, will be prompted.
+`--password`|Messenger password. If not set, will be prompted.
 
 The following flags should not be given a value:
 
 Flag|Usage
 -|-
+`--headless`|If set, the `chromedriver` will be run in headless mode. This may cause additional errors, but will not launch a GUI.
