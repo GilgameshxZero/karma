@@ -363,7 +363,7 @@ def main(argv):
     # message_infos are a dictionary with these fields:
     # "sender": string (of "self" or "them")
     # "datetime": string (of datetime)
-    # "type": string (of "text", "sticker", "image", "file", or "other")
+    # "type": string (of "text", "sticker", or "other")
     # "content": string
     conversations = {}
 
